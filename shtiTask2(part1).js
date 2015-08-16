@@ -58,8 +58,6 @@ for (i = 0; i < 3; i++) {
             var l = [];
             for (K in responses)
                 l.push(K);
-                //console.log(K);
-                //console.log(responses[K]);
 
             if (l.length == 3) {
                 var c = [], cc = [], p = 0;
@@ -84,9 +82,7 @@ for (i = 0; i < 3; i++) {
                         }
                     }
                 }
-                //console.log(c);
-                //console.log(cc);
-                //console.log(p);
+                
                 console.log('Total population in African cities: ' + p);
             }
         };
