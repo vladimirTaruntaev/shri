@@ -1,0 +1,129 @@
+img {
+    width: 25px;
+    height: 25px;
+}
+
+tbody tr:nth-child(odd)
+{
+    background: darkgrey;
+    color: black;
+}
+
+html,
+body,
+h1,
+h2,
+img,
+table
+{
+    margin: 0;
+}
+
+body
+{
+
+    text-align: left;
+    color: black;
+    min-width: 600px;
+    /*padding: 30px;
+    */
+}
+
+table
+{
+    width: 100%;
+    border: 2px solid #fc3;
+    /*margin: 10px 0;
+    */
+    text-align: center;
+    border-spacing: 2px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+thead tr
+{
+    background: #fc3;
+    color: #f30;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+thead {
+    position: fixed;
+    z-index: 101;
+    top: 5px;
+}
+
+#flyOut:checked ~ tr .flyOut {
+    display: none;
+}
+
+#flyIn:checked ~ tr .flyIn {
+    display: none;
+}
+
+#crosshover th,
+#crosshover td
+{
+    padding: 0;
+}
+
+#crosshover th div,
+#crosshover td div
+{
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+#crosshover td div
+{
+    height: 20px;
+}
+
+@media (max-width: 900px) {
+    #crosshover td div
+    {
+        height: 60px;
+    }
+}
+
+@media (max-width: 1245px) {
+    #crosshover td div
+    {
+        height: 30px;
+    }
+}
+
+
+#crosshover tr:hover td div
+{
+    background: #cfc;
+    z-index: 2;
+}
+
+#crosshover td:hover div:before
+{
+    content: '';
+    position: absolute;
+    background: #cfc;
+    width: 100%;
+    height: 2000px;
+    top: -1000px;
+    left: 0;
+    z-index: -2;
+}
+
+#crosshover td:hover div:after
+{
+    content: '';
+    position: absolute;
+    background: #9f9;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    cursor: pointer;
+}
