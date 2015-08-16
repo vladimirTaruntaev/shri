@@ -1,0 +1,27 @@
+<html>
+    <head>
+         <meta charset="utf-8">
+        <title>shriTask3</title>
+    </head>
+
+    <body>
+
+        <button id="load" onclick="loadSound(url)">LOAD URL (example)</button>
+        <button id="play" onclick="playSound(audioBuffer)" style="visibility: hidden">PLAY</button>
+        <button id="stop" onclick="stopSound()" style="visibility: hidden">STOP</button>
+
+        <div id="dropZone" style="width: 600px;height: 200px; margin: 10px; border: dotted black 2px;">DROP FILE HERE</div>
+        <input id="fileOpen" type="file"/>
+        <div id="fileName"></div>
+        <div id="song"></div>
+        <div id="singer"></div>
+
+
+        <script src="script.js" rel="script" type="text/javascript"></script>
+
+        <!-- for meta -->
+        <!--
+        <script src="idv3.js" rel="script" type="text/javascript"></script>
+        -->
+    </body>
+</html>
